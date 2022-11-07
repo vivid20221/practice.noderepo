@@ -1,32 +1,27 @@
-const inquirer = require('inquirer');
-const fs = require('fs');
 
-
-const generateREADME = ({ title, Description, Installation,  Links, }) =>
-  `
   ## <a href="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white">
   <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" /></a>
   ---
-  # ${title}
+  # 
   
   
   
   
   ## About this Project 
-  ${Description}
+  
   
   
 
   
   ## Installation 
-  ${Installation}
+  
   
  
   
   ## How to 
+  ![Alt Text](https://github.com/vivid20221/practice.noderepo/blob/main/main/video/image/bandicam%202022-11-07%2012-57-16-845.gif)
   
   
-
   
  
   
@@ -44,7 +39,7 @@ const generateREADME = ({ title, Description, Installation,  Links, }) =>
   
   
   
-  ## link to GitHub Project ${Links}
+  ## link to GitHub Project 
 
   ## MIT License
 
@@ -66,43 +61,4 @@ const generateREADME = ({ title, Description, Installation,  Links, }) =>
   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-  SOFTWARE.`;
-
-  
-  
-  
-
-inquirer
-  .prompt([
-    {
-      type: 'input',
-      name: 'title',
-      message: ' What is the name of your project?',
-    },
-   
-    {
-      type: 'input',
-      name: 'Description',
-      message: 'Provide a short description explaining the what, why, and how of your project.',
-    },
-   
-    {
-      type: 'input',
-      name: 'Installation',
-      message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.',
-    },
-    
-    
-    {
-      type: 'input',
-      name: 'Links',
-      message: 'Provide a link to your project on GitHub',
-    }
-  ])
-  .then((answers) => {
-    const readmePageContent = generateREADME(answers);
-
-    fs.writeFile('README.md', readmePageContent, (err) =>
-      err ? console.log(err) : console.log('Successfully created README.md!')
-    );
-  });
+  SOFTWARE.
