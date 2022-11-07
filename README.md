@@ -19,7 +19,7 @@
  
   
   ## How to 
-  Uploading bandicam 2022-11-07 14-33-16-041.gif…
+  ![ezgif com-gif-maker](https://user-images.githubusercontent.com/111388865/200413343-c6820096-d529-4cdf-99db-8dab6c6a50f9.gif)
 
 
   
