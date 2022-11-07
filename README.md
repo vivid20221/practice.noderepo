@@ -19,7 +19,7 @@
  
   
   ## How to 
-  Uploading bandicam 2022-11-07 14-33-16-041.mp4…
+  Uploading bandicam 2022-11-07 14-33-16-041.gif…
 
 
   
